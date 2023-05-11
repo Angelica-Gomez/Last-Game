@@ -73,6 +73,12 @@ header nav ul li a:hover{
     display: none;
 }
 
+.carousel-image {
+    height: 600px;
+    width: 100%; 
+    object-fit: cover;
+}
+
 body{
     background:rgb(255, 255, 255)
 }
