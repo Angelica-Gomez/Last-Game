@@ -387,12 +387,12 @@ outline: 0;
 }
 
 .letter__title{
-    font-size: 16px;
+    font-size: 14px;
     color: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
     font-weight: bold;
     width: 100%;
     display: block;
-    text-align: center;
+    text-align: left;
 }
 
 .letter__price{
