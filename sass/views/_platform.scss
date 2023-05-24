@@ -1,0 +1,123 @@
+
+.title {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 0;
+}
+
+.technology__title {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 25px;
+    font-weight: bold;
+    color: #3f4243;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 0;
+}
+
+.technology {
+    max-width: 1200px;
+    margin: 0 auto;
+
+
+    &__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    .letter {
+    background-color:   #ebebe8;
+    border-radius: 10px;
+    border: 1px solid #0966d3;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease;   
+
+
+    &:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+
+    &__image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+    &__title {
+    font-size: 14px;
+    color: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+    font-weight: bold;
+    width: 100%;
+    display: block;
+    text-align: left;
+}
+
+    &__price {
+    font-size: 22px;
+    color:  0 25px 50px -12px rgba(0, 0, 0, 0.6);
+    font-weight: bold;
+    width: 100%;
+    display: block;
+    text-align: center;
+    }
+}
+}
+}
+
+
+
+@media (min-width: 1100px){
+
+    .technology__cards {
+          grid-template-columns: repeat(4, 1fr);
+        }
+    .delivery__information{
+        font-size: 16px;
+    }
+
+    .products__cards{
+        grid-template-columns: repeat(3, 1fr);
+    }  
+}
+
+
+@media (min-width: 768px) {
+    .delivery{
+        display: flex;
+
+    }
+
+    .delivery__information{
+        font-size: 13px;
+    }
+    
+    .products__cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 770px) {
+
+    .technology__cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+  }
+
+  @media (max-width: 320px) {
+    
+    .technology__cards {
+        grid-template-columns: 1fr;
+      }
+        }
+        
+    

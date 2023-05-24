@@ -1,0 +1,35 @@
+.form {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+
+    &__title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #3f4243;
+}
+    &__email {
+    text-decoration: none;
+    padding: 2px 1px;
+    border: 2px solid black;
+    border-radius: 5px;
+    outline: 0;
+}
+    input:hover {
+    border: 2px solid  #0966d3;
+    }
+    
+    button{
+    border: none;
+    font-weight: bold;
+    background-color: white;
+    letter-spacing: 1px;
+    padding: 2px 1px;
+    border-radius: 5px;
+    border: 2px solid  #0966d3;
+    width: 150px;
+    outline: 0;
+    }
+
+}
