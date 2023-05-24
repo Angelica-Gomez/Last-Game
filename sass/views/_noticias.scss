@@ -1,6 +1,5 @@
 .main {
-   max-width: 1200px;
-   margin: 0 auto;
+     @extend .container;
 
   &__container {
       display: block;
@@ -16,7 +15,7 @@
       &-title {
           font-size: 20px;
           font-weight: bold;
-          color: #3f4243;
+          color: $secondary;
           margin-top: 10px;
           margin-bottom: 10px;
           padding: 10px 0;
@@ -57,7 +56,7 @@
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
   
 .news__title {
-  color:  #0966d3;
+  color:  $primary;
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
@@ -105,7 +104,7 @@
 
 
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: $bpLarge) {
   .main__container {
     width: 30%;
   }
@@ -121,7 +120,7 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $bpMedium) {
 
     .news-container {
       width: 100%;

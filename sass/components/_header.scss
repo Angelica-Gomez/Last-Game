@@ -1,5 +1,5 @@
 .header{
-    background: radial-gradient(at center center, rgb(72 72 72) 0%, rgb(0, 0, 0) 100%) !important;
+    background: $bgDark;
     padding: 5px 10px;
     
     &__networks {
@@ -16,11 +16,10 @@
     }
 
         &__container{
-        max-width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between; 
-        align-items: center;
+          @extend .container;
+         display: flex;
+         justify-content: space-between; 
+         align-items: center;
 
         a img{
             margin: 10px 0;  

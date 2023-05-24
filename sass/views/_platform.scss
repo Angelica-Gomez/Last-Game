@@ -1,7 +1,6 @@
 
 .title {
-    max-width: 1200px;
-    margin: 0 auto;
+    @extend .container;
     font-size: 30px;
     font-weight: bold;
     color: black;
@@ -11,19 +10,17 @@
 }
 
 .technology__title {
-    max-width: 1200px;
-    margin: 0 auto;
+    @extend .container;
     font-size: 25px;
     font-weight: bold;
-    color: #3f4243;
+    color: $secondary;
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 10px 0;
 }
 
 .technology {
-    max-width: 1200px;
-    margin: 0 auto;
+    @extend .container;
 
 
     &__cards {
@@ -75,7 +72,7 @@
 
 
 
-@media (min-width: 1100px){
+@media (min-width: $bpLarge){
 
     .technology__cards {
           grid-template-columns: repeat(4, 1fr);
@@ -90,7 +87,7 @@
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: $bpMedium) {
     .delivery{
         display: flex;
 
@@ -103,17 +100,15 @@
     .products__cards{
         grid-template-columns: repeat(2, 1fr);
     }
-}
-
-@media (max-width: 770px) {
 
     .technology__cards {
         grid-template-columns: repeat(2, 1fr);
       }
 
-  }
+}
 
-  @media (max-width: 320px) {
+
+  @media (max-width: $bpSmall) {
     
     .technology__cards {
         grid-template-columns: 1fr;

@@ -1,15 +1,8 @@
-header nav {
-  font-family: Montserrat;
-  font-weight: bold;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-}
-
-ul {
-  list-style-type: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
 }
 
 @font-face {
@@ -24,11 +17,23 @@ body {
   background: rgb(255, 255, 255);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  line-height: 1.5;
+header nav {
+  font-family: Montserrat;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container, .products, .technology, .technology__title, .title, .main, .form, .footer__container, .header__container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .header {
@@ -46,8 +51,6 @@ body {
   padding: 0 10px;
 }
 .header__container {
-  max-width: 1200px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -124,8 +127,6 @@ body {
   padding-top: 20px;
 }
 .footer__container {
-  max-width: 1200px;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
@@ -190,8 +191,6 @@ body {
   }
 }
 .form {
-  max-width: 1200px;
-  margin: 0 auto;
   padding-top: 80px;
   padding-bottom: 50px;
 }
@@ -222,10 +221,6 @@ body {
   outline: 0;
 }
 
-.main {
-  max-width: 1200px;
-  margin: 0 auto;
-}
 .main__container {
   display: block;
   background-color: #ebebe8;
@@ -365,8 +360,6 @@ body {
   }
 }
 .title {
-  max-width: 1200px;
-  margin: 0 auto;
   font-size: 30px;
   font-weight: bold;
   color: black;
@@ -376,8 +369,6 @@ body {
 }
 
 .technology__title {
-  max-width: 1200px;
-  margin: 0 auto;
   font-size: 25px;
   font-weight: bold;
   color: #3f4243;
@@ -386,10 +377,6 @@ body {
   padding: 10px 0;
 }
 
-.technology {
-  max-width: 1200px;
-  margin: 0 auto;
-}
 .technology__cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -429,7 +416,7 @@ body {
   text-align: center;
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1200px) {
   .technology__cards {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -450,8 +437,6 @@ body {
   .products__cards {
     grid-template-columns: repeat(2, 1fr);
   }
-}
-@media (max-width: 770px) {
   .technology__cards {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -483,10 +468,6 @@ body {
   color: white;
 }
 
-.products {
-  max-width: 1200px;
-  margin: 0 auto;
-}
 .products__title {
   font-size: 25px;
   font-weight: bold;
@@ -528,7 +509,7 @@ body {
   text-align: center;
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1200px) {
   .delivery__information {
     font-size: 16px;
   }

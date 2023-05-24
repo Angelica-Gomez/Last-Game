@@ -1,15 +1,8 @@
-header nav {
-    font-family: Montserrat;
-    font-weight: bold;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-ul {
-    list-style-type: none;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
 }
 
 @font-face {
@@ -26,9 +19,25 @@ body{
     background:rgb(255, 255, 255) 
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    line-height: 1.5;
+header nav {
+    font-family: Montserrat;
+    font-weight: bold;
 }
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+// extend
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
