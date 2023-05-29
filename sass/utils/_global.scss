@@ -39,5 +39,9 @@ ul {
     margin: 0 auto;
 }
 
-
+@mixin templateFlex($direction, $justify) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+}
 

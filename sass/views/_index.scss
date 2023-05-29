@@ -3,7 +3,7 @@
     width: 100%; 
     object-fit: cover;
 }
-.delivery{
+.delivery {
     background: $bgDark;
     height: 50px;
     margin: 0 auto;
@@ -12,7 +12,7 @@
     align-items: center;
     margin-bottom: 30px;
 
-&__information{
+&__information {
     margin: 5px; 
     padding-left: 3px;
     font-size: 17px; 
@@ -20,40 +20,36 @@
 }
 }
 
-.products{
+.products {
     @extend .container;
 
-
-&__title{
+&__title {
     font-size: 25px;
     font-weight: bold;
     color: $secondary;
     margin-bottom: 20px;
-    padding: 10px 0;
-    
+    padding: 10px 5px;   
 }
 
-&__cards{
+&__cards {
     display: grid;
     grid-template-columns: 1fr;
     gap: 50px;
 }
 
-
-
-.card__header{
+.card__header {
     background-color:   #ebebe8;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
    
-&-image{
+&-image {
     width: 100%;
     border-radius: 10px;
     margin-bottom: 20px;
     object-fit: cover;
 }
-&-title{
+&-title {
     font-size: 16px;
     color: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
     font-weight: bold;

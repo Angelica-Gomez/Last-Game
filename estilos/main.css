@@ -121,6 +121,7 @@ ul {
 .footer {
   background: radial-gradient(at center center, rgb(72, 72, 72) 0%, rgb(0, 0, 0) 100%) !important;
   height: 500px;
+  padding-left: 5px;
 }
 .footer__logo {
   margin: 20px;
@@ -193,6 +194,7 @@ ul {
 .form {
   padding-top: 80px;
   padding-bottom: 50px;
+  padding-left: 5px;
 }
 .form__title {
   font-size: 22px;
@@ -200,11 +202,14 @@ ul {
   color: #3f4243;
 }
 .form__email {
+  width: 400px;
   text-decoration: none;
   padding: 2px 1px;
   border: 2px solid black;
   border-radius: 5px;
   outline: 0;
+  padding-left: 5px;
+  margin-bottom: 10px;
 }
 .form input:hover {
   border: 2px solid #0966d3;
@@ -221,6 +226,115 @@ ul {
   outline: 0;
 }
 
+@media (max-width: 768px) {
+  .form__email {
+    width: 330px;
+  }
+}
+@media (max-width: 320px) {
+  .applicattion__data {
+    width: 300px;
+  }
+}
+.main__contenedor-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main__contenedor-information {
+  font-size: 22px;
+  font-weight: bold;
+  color: #3f4243;
+  margin-bottom: 20px;
+  padding: 10px 0;
+}
+.main__contenedor-contact .telephone {
+  color: #0966d3;
+  font-size: 35px;
+}
+.main__contenedor-contact .telephone:hover {
+  color: black;
+}
+.main__contenedor-contact .whatsapp {
+  color: #0966d3;
+  font-size: 35px;
+}
+.main__contenedor-contact .whatsapp:hover {
+  color: #14b8a6;
+}
+.main__contenedor-contact .envelope {
+  color: #0966d3;
+  font-size: 35px;
+}
+.main__contenedor-contact .envelope:hover {
+  color: red;
+}
+
+.applicattion {
+  display: flex;
+  flex-direction: column;
+}
+.applicattion h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #3f4243;
+  margin: 20px 0;
+}
+.applicattion__data {
+  width: 400px;
+  text-decoration: none;
+  padding: 2px 1px;
+  border: 2px solid black;
+  border-radius: 5px;
+  outline: 0;
+  margin-bottom: 10px;
+  padding-left: 5px;
+}
+.applicattion input:hover {
+  border: 2px solid #0966d3;
+}
+.applicattion button {
+  border: none;
+  font-weight: bold;
+  background-color: white;
+  letter-spacing: 1px;
+  padding: 2px 1px;
+  border-radius: 5px;
+  border: 2px solid #0966d3;
+  width: 100px;
+  outline: 0;
+}
+
+@media (max-width: 1200px) {
+  .applicattion button {
+    width: 100px;
+  }
+}
+@media (max-width: 768px) {
+  .main__contenedor-contact {
+    padding-left: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main__contenedor-information {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .main__contenedor .telephone,
+  .main__contenedor .whatsapp,
+  .main__contenedor .envelope {
+    font-size: 25px;
+  }
+  .applicattion__data {
+    width: 330px;
+  }
+}
+@media (max-width: 320px) {
+  .applicattion__data {
+    width: 300px;
+  }
+}
 .main__container {
   display: block;
   background-color: #ebebe8;
@@ -365,7 +479,7 @@ ul {
   color: black;
   margin-top: 20px;
   margin-bottom: 20px;
-  padding: 10px 0;
+  padding: 10px 5px;
 }
 
 .technology__title {
@@ -374,12 +488,12 @@ ul {
   color: #3f4243;
   margin-top: 10px;
   margin-bottom: 10px;
-  padding: 10px 0;
+  padding: 10px 5px;
 }
 
 .technology__cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr;
   gap: 20px;
 }
 .technology__cards .letter {
@@ -423,19 +537,13 @@ ul {
   .delivery__information {
     font-size: 16px;
   }
-  .products__cards {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }
-@media (min-width: 768px) {
+@media (max-width: 1200px) {
   .delivery {
     display: flex;
   }
   .delivery__information {
     font-size: 13px;
-  }
-  .products__cards {
-    grid-template-columns: repeat(2, 1fr);
   }
   .technology__cards {
     grid-template-columns: repeat(2, 1fr);
@@ -473,7 +581,7 @@ ul {
   font-weight: bold;
   color: #3f4243;
   margin-bottom: 20px;
-  padding: 10px 0;
+  padding: 10px 5px;
 }
 .products__cards {
   display: grid;

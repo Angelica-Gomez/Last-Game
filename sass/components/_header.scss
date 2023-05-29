@@ -16,7 +16,7 @@
     }
 
         &__container{
-          @extend .container;
+         @extend .container;
          display: flex;
          justify-content: space-between; 
          align-items: center;
