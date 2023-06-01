@@ -30,6 +30,11 @@
 
             li {
                 margin:0 15px;
+                transition: $transition;
+               
+                &:active {
+                 transform: scale(0.9);
+                }
             }
         }
 
@@ -97,7 +102,8 @@
       .header__container-navbar li:first-child {
         margin-top: 15px;
       }
-      .header__container-navbar-mobile{
+
+      .header__container-navbar-mobile {
           display: flex;
           margin-left: auto;
       }
