@@ -595,6 +595,11 @@ ul {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+@media (max-width: 768px) {
+  .technology__cards {
+    grid-template-columns: 1fr;
+  }
+}
 @media (max-width: 320px) {
   .technology__cards {
     grid-template-columns: 1fr;

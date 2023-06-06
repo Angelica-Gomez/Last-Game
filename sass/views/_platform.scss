@@ -71,7 +71,7 @@
 }
 }
 
-@media (min-width: $bpLarge) {
+ @media (min-width: $bpLarge) {
 
     .technology__cards {
           grid-template-columns: repeat(4, 1fr);
@@ -82,25 +82,31 @@
 }
 
 @media (max-width: 1200px) {
-    .delivery{
+    .delivery {
         display: flex;
     }
 
-    .delivery__information{
+    .delivery__information {
         font-size: 13px;
     }
-    
+
     .technology__cards {
         grid-template-columns: repeat(2, 1fr);
-      }
+    }
 
+} 
+
+@media (max-width: $bpMedium) {
+    .technology__cards {
+       grid-template-columns: (1fr);
+    }
 }
 
-  @media (max-width: $bpSmall) {
+@media (max-width: $bpSmall) {
     
     .technology__cards {
         grid-template-columns: (1fr);
       }
-        }
+}
         
     
