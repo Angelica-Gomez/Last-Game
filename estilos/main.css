@@ -50,12 +50,24 @@ header label {
   width: 1.87em;
   padding: 0, 937em;
   height: 1, 87em;
+  position: fixed;
 }
 
 header label:hover {
   cursor: pointer;
 }
 
+@media (min-width: 1200px) {
+  .logonav {
+    display: flex;
+    justify-content: end;
+    margin-top: 30px;
+  }
+  header li {
+    display: inline-flex;
+    padding-left: 10px;
+  }
+}
 @media (max-width: 1200px) {
   .logonav {
     display: flex;
