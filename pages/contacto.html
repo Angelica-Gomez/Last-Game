@@ -1,133 +1,121 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Contacta con Last Game, para recibir asesoramiento personalizado no dudes en mandarnos un mensaje" />
-    <meta name="keywords" content="contacta, Last Game, mensaje" />
-    <title>Last Game - Contacta: Lasta Game, mensaje</title>
-    
-    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/style.css"/>
-    <link rel="stylesheet" href="../estilos/main.css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Contacta con Last Game, para recibir asesoramiento personalizado no dudes en mandarnos un mensaje" />
+  <meta name="keywords" content="contacta, Last Game, mensaje" />
+  <title>Last Game - Contacta: Lasta Game, mensaje</title>
 
-    
+  <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../estilos/main.css" />
+
 </head>
+
 <body>
+  <div class="contenedor">
     <header class="header">
-      <section class="header__networks">
-        <div class="header__networks-icons"><a href="https://www.facebook.com/profile.php?id=100067133461108"><img src="../assets/images/icono-facebook.png" alt="Facebook" width="30"/></a></div>
-        <div class="header__networks-icons"><a href="https://www.instagram.com/lastgame_cba/"><img src="../assets/images/icono-instagram.png" alt="Instagram" width="30"/></a></div>
-        <div class="header__networks-icons"><a href="https://twitter.com/lastgame_cba"><img src="../assets/images/icono-twitter.png" alt="Twitter" width="30"/></a></div>
-      </section>
-
-      <div class="header__container">
-        <a href="../index.html"><img src="../assets/images/logo.png" alt="Logo" width="200"/></a>
-        <nav>
-            <ul class="header__container-navbar">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./platform.html">Tienda Online</a></li>    
-                <li><a href="./noticias.html">Noticias</a></li> 
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav> 
-     </div>
-        
-        <div class="header__container-navbar-mobile">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMobileMenu" aria-controls="navbarMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
-              <span><img src="../assets/images/menu.png" alt="menu"></span>
-            </button>
-          </div>
-  
-          <div class="collapse" id="navbarMobileMenu">
-            <!-- Elementos del menú desplegable -->
-            <ul class="navbar-nav" style="padding-left: 5px; color: white;">
-                <li class="nav-item">
-                    <a class="nav-link" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./platform.html">Tienda Online</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./noticias.html">Noticias</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./contacto.html">Contacto</a>
-              </li>
-            </ul>
-        </div>
-        
-    </header>
-    
-    <main class="main">
-        <h1 class="title">Contacta con Last Game</h1>
-
-      <div class="main__contenedor">
-       <div class="main__contenedor-contact">
-         <a href="" class="telephone"><i class="bi bi-telephone-fill"></i></a>
-         <p class="main__contenedor-information">93513024137</p>
-         <a href="" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
-         <p class="main__contenedor-information">93513024137</p>
-         <a href="" class="envelope"><i class="bi bi-envelope"></i></a>
-         <p class="main__contenedor-information">lastgame.electronica@gmail.com</p>
+      <div class="logonav">
+        <a href="../index.html"><img src="../assets/images/logo.png" alt="Logo" width="150" /></a>
       </div>
-    
-       <div class="applicattion">
-         <h2>Mandanos un mensaje</h2>
-         <input class="applicattion__data" type="text" placeholder="Nombre Completo"/>
-         <input class="applicattion__data" type="email" placeholder="Email"/>
-         <input class="applicattion__data" type="text" placeholder="Número de Teléfono (Opcional)"/>
-         <input class="applicattion__data" type="text" placeholder="Escriba su mensaje"/>
-         <button>ENVIAR</button>
-       </div>
+
+      <input type="checkbox" id="btn_menu">
+      <label for="btn_menu"><img src="../assets/images/menu.png" alt="menu"></label>
+
+      <nav class="menu">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./platform.html">Tienda Online</a></li>
+          <li><a href="./noticias.html">Noticias</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+  </div>
+  </header>
+
+  <main class="main">
+    <h1 class="title">Contacta con Last Game</h1>
+
+    <div class="main__contenedor">
+      <div class="main__contenedor-contact">
+        <a href="" class="telephone"><i class="bi bi-telephone-fill"></i></a>
+        <p class="main__contenedor-information">93513024137</p>
+        <a href="" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+        <p class="main__contenedor-information">93513024137</p>
+        <a href="" class="envelope"><i class="bi bi-envelope"></i></a>
+        <p class="main__contenedor-information">lastgame.electronica@gmail.com</p>
       </div>
-      
 
-        <div class="form">
-          <h2 class="form__title">¡Enterate de todas las novedades!</h2>
-          <p class="form__information">Recibí nuestras promociones exclusivas</p>
-          <input class="form__email" type="email" placeholder="Introduce tu correo electrónico"/>
-          <button>SUSCRIBIRME</button>
-        </div>
+      <div class="applicattion">
+        <h2>Mandanos un mensaje</h2>
+        <input class="applicattion__data" type="text" placeholder="Nombre Completo" />
+        <input class="applicattion__data" type="email" placeholder="Email" />
+        <input class="applicattion__data" type="tel" placeholder="Número de Teléfono (Opcional)" />
+        <textarea class="applicattion__data" placeholder="Escriba su mensaje"></textarea>
+        <button>ENVIAR</button>
+      </div>
+    </div>
 
-    </main>
 
-     
+    <div class="form">
+      <h2 class="form__title">¡Enterate de todas las novedades!</h2>
+      <p class="form__information">Recibí nuestras promociones exclusivas</p>
+      <input class="form__email" type="email" placeholder="Introduce tu correo electrónico" />
+      <button>SUSCRIBIRME</button>
+    </div>
 
-   <footer class="footer">
-        <img lass="footer__logo" src="../assets/images/logo.png" alt="Logo" width="200"/>
+  </main>
 
-       <div class="footer__container">
-         <article class="information">
-             <h2 class="information__title">Seguinos en las Redes</h2>
-             <img class="information__icon" src="../assets/images/icono-facebook.png" alt="Facebook" width="33"/>
-             <p class="information__networks">Facebook</p>
-             <img class="information__icon" src="../assets/images/icono-instagram.png" alt="Instagram" width="30"/>
-             <p class="information__networks">Instagram</p>
-             <img class="information__icon" src="../assets/images/icono-twitter.png" alt="Twitter" width="30"/>
-             <p class="information__networks">Twitter</p>
-             </article>
 
-         <article class="information">
-             <h2 class="information__title">Medios de Envío</h2>
-             <p class="information__description">Realizá tu compra online y recibila en tu domicilio o retirá tu producto en más de 100 puntos Pickup</p>
-             <img class="information__logo"  src="../assets/images/logo-de-correo-argentino.jpg" alt="Logo de Correo Argentino" width="70" height="40"/>
-        </article>
+
+  <footer class="footer">
+    <img lass="footer__logo" src="../assets/images/logo.png" alt="Logo" width="200" />
+
+    <div class="footer__container">
+      <article class="information">
+        <h2 class="information__title">Seguinos en las Redes</h2>
+        <img class="information__icon" src="../assets/images/icono-facebook.png" alt="Facebook" width="33" />
+        <p class="information__networks">Facebook</p>
+        <img class="information__icon" src="../assets/images/icono-instagram.png" alt="Instagram" width="30" />
+        <p class="information__networks">Instagram</p>
+        <img class="information__icon" src="../assets/images/icono-twitter.png" alt="Twitter" width="30" />
+        <p class="information__networks">Twitter</p>
+      </article>
 
       <article class="information">
-             <h2 class="information__title">¡Contactanos!</h2>
-             <p class="information__description">Atención telefónica: 93513024137</p>
-             <p class="information__description">Whatsapp: 93513024137</p>
-             <p class="information__description">Horario de Atención: Lunes a Sábados de 8:00 a 20:00 hs.</p>
-             <p class="information__description">E-mail: lastgame.electronica@gmail.com</p>
-       </article>
+        <h2 class="information__title">Medios de Envío</h2>
+        <p class="information__description">Realizá tu compra online y recibila en tu domicilio o retirá tu producto en
+          más de 100 puntos Pickup</p>
+        <img class="information__logo" src="../assets/images/logo-de-correo-argentino.jpg"
+          alt="Logo de Correo Argentino" width="70" height="40" />
+      </article>
 
-         <p class="information__description"> &commat; Copyright Last Game - 2023.  All rights reserved.</p>
-      </div>
-    </footer>
-    
+      <article class="information">
+        <h2 class="information__title">¡Contactanos!</h2>
+        <p class="information__description">Atención telefónica: 93513024137</p>
+        <p class="information__description">Whatsapp: 93513024137</p>
+        <p class="information__description">Horario de Atención: Lunes a Sábados de 8:00 a 20:00 hs.</p>
+        <p class="information__description">E-mail: lastgame.electronica@gmail.com</p>
+      </article>
+
+      <p class="information__description"> &commat; Copyright Last Game - 2023. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="whatsapp_icon">
+    <a href="https://wa.me/+5493513024137" target="_blank">
+      <img src="../assets/images/whatsapp.png" alt="whatsapp" width="65px" />
+    </a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

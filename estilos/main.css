@@ -31,7 +31,7 @@ ul {
   list-style-type: none;
 }
 
-.container, .products, .technology, .technology__title, .title, .main, .form, .footer__container, .header__container {
+.container, .products, .technology, .technology__title, .title, .titles, .main, .form, .footer__container {
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -40,86 +40,65 @@ ul {
   background: radial-gradient(at center center, rgb(72, 72, 72) 0%, rgb(0, 0, 0) 100%) !important;
   padding: 5px 10px;
 }
-.header__networks {
-  padding-top: 15px;
-  height: 40px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-.header__networks-icons {
-  padding: 0 10px;
-}
-.header__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.header__container a img {
-  margin: 10px 0;
-}
-.header__container-navbar {
-  display: flex;
-}
-.header__container-navbar li {
-  margin: 0 15px;
-  transition: all 0.5s;
-}
-.header__container-navbar li:active {
-  transform: scale(0.9);
-}
-.header__container-navbar-mobile {
+
+#btn_menu {
   display: none;
 }
 
-@media screen and (max-width: 680px) {
-  .header__networks {
-    justify-content: flex-end;
-  }
-  .logo {
-    width: 100%;
-    max-width: 200px;
-  }
-  .header__container {
-    flex-direction: column;
-  }
-  .header__container-navbar {
-    display: none;
-  }
-  .header__container-navbar li {
-    margin: 0;
-  }
-  .header__container-navbar li:first-child {
-    margin-top: 15px;
-  }
-  .header__container-navbar-mobile {
+header label {
+  display: none;
+  width: 1.87em;
+  padding: 0, 937em;
+  height: 1, 87em;
+}
+
+header label:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .logonav {
     display: flex;
-    margin-left: auto;
+    justify-content: end;
+    margin-top: 30px;
+  }
+  header li {
+    display: inline-flex;
+    padding-left: 10px;
   }
 }
-@media screen and (max-width: 600px) {
-  .header__networks {
-    justify-content: flex-end;
+@media (max-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
   }
-  .header__container {
-    flex-direction: column;
+  header label {
+    display: block;
+    position: relative;
+    top: 70px;
   }
-  .logo {
-    width: 60%;
-    height: 10%;
+  .menu {
+    position: absolute;
+    top: 125px;
+    right: -10px;
+    background: radial-gradient(at center center, rgb(72, 72, 72) 0%, rgb(0, 0, 0) 100%) !important;
+    width: 11.25em;
+    margin-right: -11.25em;
+    padding-top: 10px;
+    padding-right: 20px;
+    transition: all 0.5s;
+    z-index: 1;
   }
-  .header__container-navbar {
-    display: none;
-  }
-  .header__container-navbar li {
+  #btn_menu:checked ~ .menu {
     margin: 0;
   }
-  .header__container-navbar li:first-child {
-    margin-top: 15px;
-  }
-  .header__container-navbar-mobile {
-    display: flex;
-    margin-left: auto;
+}
+@media (max-width: 320px) {
+  header label {
+    display: block;
+    position: relative;
+    right: 60px;
+    top: 90px;
   }
 }
 .footer {
@@ -195,6 +174,12 @@ ul {
     margin-top: 10px;
   }
 }
+.whatsapp_icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
 .form {
   padding-top: 80px;
   padding-bottom: 50px;
@@ -391,6 +376,15 @@ ul {
   border-radius: 10px;
 }
 
+.titles {
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px 5px;
+}
+
 .news__section {
   margin-bottom: 15px;
   padding: 20px;
@@ -487,14 +481,23 @@ ul {
     margin-top: 0;
     float: none;
   }
+  .titles {
+    text-align: center;
+  }
   .main__container {
     width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
   }
   .main__img {
     width: 100%;
   }
   .news__section {
     width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 18px;
   }
   .news__content {
     font-size: 13px;
@@ -513,6 +516,19 @@ ul {
   }
 }
 @media (max-width: 320px) {
+  .titles {
+    text-align: center;
+  }
+  .main__container {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .news__section {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 18px;
+  }
   .main__video {
     margin-top: 20px;
   }
